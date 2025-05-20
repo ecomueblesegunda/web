@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="contactosheet" href="contactos.css">
+    <style>  footer {
+      text-align: center;
+      padding: 20px;
+      color: white;
+      margin-top: 20px;}
+
+     nav{
+        overflow:hidden;  }
+      nav a{
+        float:right;
+        display:black;
+        color:white;
+        text-align:center;
+        padding:14px 7px;
+        text-decoration:none; }
+     h1{ text-align: center; color:white;}
+     img { height: 30px;
+     width: 50px;
+     }
+    header {
+
+  
+padding: 1em;
+text-align: center;
+}
+
+header nav ul {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: space-between;
+}
+
+header nav ul li {
+margin-right: 20px;
+}
+
+
+header nav a {
+color: #fff;
+text-decoration: none;
+font-family: monotype corsiva ;
+}
+/* Media queries para dispositivos móviles */
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin-right: 0;
+    }
+  }
+    
+    body { 	background-image: url('https://img.freepik.com/fotos-premium/fondo-muebles-modernos_469760-19702.jpg');
+			background-size: cover; /* Ajusta el tamaño de la imagen */
+			background-repeat: no-repeat; /* Evita la repetición de la imagen */
+			background-attachment: fixed; /* Fija la imagen en la posición */
+			margin: 0; /* Elimina el margen */
+			padding: 0; /* Elimina el relleno */}
+      h2{color:#fff; margin: 100px;}
+
+      .social {
+	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+	left: 0; /* Establecemos la barra en la izquierda */
+	top: 50px; /* Bajamos la barra 50px de arriba a abajo */
+	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+
+	.social ul {
+		list-style: none;
+	}
+
+	.social ul li a {
+		display: inline-block;
+		color:#fff;
+		background: #000;
+		padding: 10px 15px;
+		text-decoration: none;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+	}
+
+	 /* Establecemos los colores de cada red social, aprovechando su class */
+   .social ul li .icon-AI {background: #6f9ad3;}
+	.social ul li .icon-mail {background: #fff;}
+
+	.social ul li a:hover {
+		background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
+		padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+	}
+  
+    </style>
+</head>
+<body>
+  <!--contenido de la pagina-->
+  <header> <nav> <ul> <li><a href="inicio.html"> Inicio </a></li>
+    <li><a href="articulos.html"> Articulos</a></li>
+<li><a href="contactos.html"> Contactos </a></li> </ul></nav> </header>
+<div class="social">
+  <ul>
+    <li><a href="https://copilot.microsoft.com/chats/WF8pqvoToV9baxcwiuExd" target="_blank" class="icon-AI">
+<img src="AI.jpg" alt="">
+    </a></li>
+    <li><a href="mailto:jasmir0223@gmail.com" class="icon-mail">
+<img src="correo.jpg" alt="">
+    </a></li>
+  </ul>
+</div>
+    <h1> Contactos </h1> 
+ <h2>en esta seccion nos puedes dar una opinion o un reporte acerca de la pagina 
+    o problemas con el productos gracias a nuestro servicio a clientes que siempre esta
+    para servirle para tener un buen empeño en nuestra empresa y servicio ala entrega 
+    de muebles.
+ </h2> 
+
+  <footer>  
+    &copy; 2025 Eco Muebles De Segunda Mano. - Todos los derechos reservados
+</footer>
+
+ 
+</body>
+</html>

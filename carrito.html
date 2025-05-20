@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style> 
+    footer {
+           text-align: center;
+           padding: 20px;
+           background-color:#f7ddc2;;
+           color: black;
+           margin-top: 20px;}
+
+       img { width: 200px; height: 200px;}
+       h1{ text-align: center;}
+       nav{
+       overflow:hidden;  }
+     nav a{
+       float:right;
+       display:black;
+       color:green;
+       text-align:center;
+       padding:14px 7px;
+       text-decoration:none; }
+       table {
+         width: 100% ;
+         margin: 30px auto;
+       }
+       body { background-color: #f7ddc2;}
+       .products {
+   display: flex;
+   gap: 20px;
+}
+body { 	background-image: url('https://img.freepik.com/fotos-premium/fondo-muebles-modernos_469760-19702.jpg');
+			background-size: cover; /* Ajusta el tamaño de la imagen */
+			background-repeat: no-repeat; /* Evita la repetición de la imagen */
+			background-attachment: fixed; /* Fija la imagen en la posición */
+			margin: 0; /* Elimina el margen */
+			padding: 0; /* Elimina el relleno */}
+      h2{color:#fff; margin: 100px;}
+.product {
+   border: 1px solid #ccc;
+   padding: 10px;
+   border-radius: 5px;
+}
+
+button {
+   background-color: #9da384;
+   color: white;
+   border: none;
+   padding: 10px;
+   cursor: pointer;
+   border-radius: 5px;
+}
+
+
+</style>
+<script>
+ let cart = [];
+let total = 0;
+
+function addToCart(product, price) {
+   cart.push({ product, price });
+   total += price;
+   updateCart();
+}
+
+function updateCart() {
+   const cartElement = document.getElementById('cart');
+   const totalElement = document.getElementById('total');
+   
+   cartElement.innerHTML = '';
+   cart.forEach(item => {
+       const li = document.createElement('li');
+       li.textContent = `${item.product} - $${item.price.toFixed(2)}`;
+       cartElement.appendChild(li);
+   });
+   
+   totalElement.textContent = total.toFixed(2);
+}
+
+</script>
+<script>
+
+</script>
+<body>
+  <!--contenido de la pagina-->
+    <nav> <a href="contactos.html"> contactos </a>
+        <a href="articulos.html"> articulos </a>
+      <a href="inicio.html"> inicio </a> </nav>
+ <img src="mueble1.jpg" alt="">
+    <p>Precio: $1,566</p>
+      <button onclick="addToCart('Producto 1', 1566)" >  Agregar al Carrito</button>
+      <button onclick="alert('Producto Comprado')">Comprar</button>
+    <h2>Carrito</h2>
+    <ul id="cart"></ul>
+    <p>Total: $<span id="total">0.00</span></p>
+    <script src="script.js"></script>  
+</body>
+</html>

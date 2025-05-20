@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style> 
+       footer {
+            text-align: center;
+            padding: 20px;
+            color: white;
+            margin-top: 20px;
+            font-family: monotype corsiva;}
+
+
+  
+    h1{ text-align: center;
+    font-family: monotype corsiva;
+  color:#fff;}
+  
+    h3{font-family: monotype corsiva;
+      color:#fff;}
+      header {
+
+  
+padding: 1em;
+text-align: center;
+}
+
+header nav ul {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: space-between;
+}
+
+header nav ul li {
+margin-right: 20px;
+}
+
+header nav a {
+color: #fff;
+text-decoration: none;
+font-family: monotype corsiva ;
+}
+/* Media queries para dispositivos móviles */
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin-right: 0;
+    }
+  }
+body { 
+			background-image: url('https://img.freepik.com/fotos-premium/fondo-muebles-modernos_469760-19702.jpg');
+			background-size: cover; /* Ajusta el tamaño de la imagen */
+			background-repeat: no-repeat; /* Evita la repetición de la imagen */
+			background-attachment: fixed; /* Fija la imagen en la posición */
+			margin: 0; /* Elimina el margen */
+			padding: 0; /* Elimina el relleno */}
+h2 { text-align: center; margin: 10px;
+  color:#fff;
+    font-family: monotype corsiva;
+  }
+  header {
+
+  
+padding: 1em;
+text-align: center;
+}
+
+header nav ul {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: space-between;
+}
+
+header nav ul li {
+margin-right: 20px;
+}
+
+header nav a {
+color: #fff;
+text-decoration: none;
+}
+/* Media queries para dispositivos móviles */
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin-right: 0;
+    }
+  }
+  nav{
+        overflow:hidden;  }
+      nav a{
+        float:right;
+        display:black;
+        color:white;
+        text-align:center;
+        padding:14px 7px;
+        text-decoration:none; }
+        table {
+          width: 100% ;
+          margin: 30px auto; }
+          video{display: block;
+            margin: 0 auto ;}
+            .social {
+	position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+	left: 0; /* Establecemos la barra en la izquierda */
+	top: 50px; /* Bajamos la barra 50px de arriba a abajo */
+	z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+
+	.social ul {
+		list-style: none;
+	}
+
+	.social ul li a {
+		display: inline-block;
+		color:#fff;
+		background: #000;
+		padding: 10px 15px;
+		text-decoration: none;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+	}
+
+	.social ul li .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
+	.social ul li .icon-whatsapp {background: #00f00c;}
+	.social ul li .icon-instagram {background: #dd0683;}
+	.social ul li .icon-pinterest {background: #ae181f;}
+	.social ul li .icon-mail {background: #666666;}
+
+	.social ul li a:hover {
+		background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
+		padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+	}
+ .social img { height: 30px;
+    width: 50px;}
+    
+   </style>
+</head>
+<body>
+  <!-- Contenido de la página -->
+  <header>
+    <nav>
+        <ul>
+          <li> <a href="mision.html">Mision</a></li>
+          <li> <a href="vision.html">Vision</a></li>
+          <li> <a href="valores.html">Valores</a></li>
+          <li> <a href="acerca.html">Acerca De</a></li>
+          <li><a href="inicio.html"> inicio </a> </li>
+          <li><a href="articulos.html"> articulos </a></li>
+        <li><a href="contactos.html"> contactos </a></li>
+        <li><a href="perfil.html">perfil</a></li> </nav>
+        </ul>
+    </nav>
+    <div class="social">
+      <ul>
+        <li><a href="https://www.facebook.com/share/1BkrYZnNrS/?mibextid=wwXIfr" target="_blank" class="icon-facebook">
+          <img src="facebook.png" alt=""> 
+        </a></li>
+        <li><a href="https://api.whatsapp.com/send/?text=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1AEgGnGx1u%2F&type=custom_url&app_absent=0" target="_blank" class="icon-whatsapp">
+          <img src="whatsApp.png" alt="">
+        </a></li>
+        <li><a href="http://www.googleplus.com/falconmasters" target="_blank" class="icon-instagram">
+          <img src="Instagrаm-Logo.png" alt="">
+        </a></li>
+      </ul>
+    </div>
+</header>
+    <h1> Bienvenidos a Eco Muebles de Segunda Mano</h1>
+    <div class="slider-box"> <ul> <li> <img src="logo.jpg" alt="">  </li></ul ></div>
+      <video width="640" height="480" controls>
+        <source src="WhatsApp Video 2025-04-07 at 8.22.45 PM.mp4" type="video/mp4">
+        Tu navegador no admite este video.
+       </video>
+       <ul> <li> <video width="640" height="480" controls>
+          <source src="WhatsApp Video 2025-04-07 at 8.36.08 PM.mp4" type="video/mp4">
+          Tu navegador no admite este video.
+         </video> </li></ul>
+
+         <footer>
+            &copy; 2025 Eco Muebles De Segunda Mano. - Todos los derechos reservados
+        </footer>
+    
+</body>
+</html>

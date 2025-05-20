@@ -1,0 +1,32 @@
+*
+.slider-box{
+    width: 300px;
+    height: auto;
+    margin: 30px auto 0;
+
+}
+.slider-box{
+    display: block;
+    margin: 0 auto ;
+}
+.slider-box ul{
+ display: flex;
+padding: 0;
+width: 40%;
+animation: slide 0s alternate ease-in-out;
+}
+.slider-box li{
+    width: 300px;
+    list-style: none ;
+    position: relative;
+ 
+}
+.slider-box img{
+    width: 300%;
+    
+   
+ } 
+@keyframes slide{
+    25% { margin-left:-100%;}
+    45% { margin-left:-100%;}
+}
